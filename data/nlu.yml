@@ -1,0 +1,771 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - how are you?
+    - good day
+    - what's up?
+    - How are you doing?
+    - sup
+    - heyo
+    - howdy
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good bye
+    - see you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - talk to you later
+    - ttyl
+    - see ya
+
+- intent: affirm
+  examples: |
+    - yes
+    - yep
+    - y
+    - yeah
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: idle
+  examples: |
+    - ok
+    - Interesting
+    - Understood
+    - I see
+
+- intent: whats companyApp
+  examples: |
+    -	What is companyApp
+    -	Tell me about companyApp
+    -	Define companyApp
+    -	Explain companyApp
+    -	What is companyApp
+    -	I would like to know about companyApp
+    -	companyApp
+    -	What is the office app
+    -	What is ASL app
+    -	Short note on companyApp
+    -	Speak about companyApp
+    - Summarize companyApp
+    - can you tell what is companyApp
+    - I want to know about companyApp
+    - companyApp app
+    - company app
+    - know companyApp
+    - office app
+  
+- intent: companyApp for who
+  examples: |
+    -	Who can use companyApp
+    -	Who will use companyApp
+
+- intent: companyApp requirements
+  examples: |
+    -	What is requirements for using companyApp app
+    -	Eligibility of using the companyApp app
+
+- intent: companyApp requirements not matched
+  examples: |
+    -	What if I don’t have the requirements for using companyApp app
+    -	will office provide a smartphone for companyApp app
+    - If I have no smart phone or any device to use the app?
+    - but i have no smart phone
+
+- intent: how to use companyApp
+  examples: |
+    -	How to use companyApp
+    -	companyApp tutorial
+    -	Who is eligible for using companyApp
+    -	Guideline of using it
+    -	Guideline of using companyApp app
+    -	How does companyApp work?
+    - companyApp using demo
+    - How to input information in companyApp?
+    - i don't know how to input in companyApp app
+    - Understanding companyApp app
+    - Understanding companyApp app features
+    - Training about companyApp app
+    - Training on how to use companyApp app
+    - companyApp App Training 
+    - insert info in companyApp app?
+    - training for companyApp app
+    - insert information in companyApp app
+    - update information in companyApp app?
+    - training regarding use of companyApp app
+    - Does company train employee to use the companyApp app
+    - If I don't understand anything of the companyApp application?
+    - what If I don't understand something of the app?
+    - i don't understand the companyApp app
+    - i am not understanding companyApp app
+
+- intent: companyApp features
+  examples: |
+    -	What features are in companyApp app
+    -	Why would I use companyApp app
+    -	What things can I do with the companyApp app
+
+- intent: update information log 
+  examples: |
+    - How to update information?
+    - how information is updated?
+    - how to update info
+    - how update information
+    - How info Is updated 
+    -	How to update companyApp
+    -	What to put in companyApp
+    -	What type of working update
+    -	How to update info
+    -	How information is updated
+    -	Process of updating information
+    - how to give log
+    - daily log
+    - where to give daily log
+    
+
+- intent: daily log
+  examples: |
+    -	What is daily log
+    -	Log
+    -	Daily log
+
+
+- intent: update information real time
+  examples: |
+    -	What is real time work update
+    -	What are the rules of updating information
+    -	When to provide work update
+
+
+- intent: consequence for not updating information
+  examples: |
+    - What is the consequences if an employee does not update his information?
+    - What if an employee does not update his info?
+    - not updating work update in real time
+    -	Is there any issue if work update is not given in real time?
+    -	What is the punishment for not updating companyApp time to time?
+
+- intent: mobile bill
+  examples: |
+    -	Would asl provide internet bill?
+    -	Does mobile bill include internet pack?
+    - Does office provide sim/internet/data pack to use companyApp?
+    - Does office provide sim to use companyApp?
+    - Does office provide internet pack to use companyApp?
+    - Does office provide data pack to use companyApp?
+    - what is the mobile bill policy?
+    - what is the internet bill policy
+
+- intent: mobile bill 2
+  examples: |
+    - will office pay for extra use of data
+    - mobile package is finished
+    - need mobile recharge
+    - mobile data is finished, need recharge
+
+
+- intent: sim
+  examples: |
+    -	Will office provide me a mobile phone with sim?
+    -	Can I use my personal sim?
+    - office sim
+    - office mobile number
+
+- intent: sim 2
+  examples: |
+    - will office pay if the sim is lost?
+    - sim lost
+    - office number lost
+
+- intent: personal use of office internet pack
+  examples: |
+    - Can I use internet for my personal use?
+    - Can I use office internet package for my personal use?
+    - using sim, internet for my personal use allowed?
+    - using sim, internet for my personal use ok? 
+    - office sim for personal use
+    - office sim or internet for personal use
+    - office sim internet for personal reason?
+    - sim and internet provided by office for personal use?
+
+- intent: will office provide smartphone
+  examples: |
+    - Does office provide any device or smartphone to use companyApp if I don't have any smartphone?
+    - will office provide smartphone?
+    - office provide device use app
+    - company provide device
+    - office device
+    - office provide mobile use app
+    - company provide mobile phone
+    - company provide mobile phone give attendance
+    - office provide mobile phone give attendance
+    - office provide mobile phone
+    - having mobile that do not support companyApp app
+    - don't have compatible mobile
+    - do not have compatible mobile
+    - have incompatible mobile
+    - mobile phone
+    - smart phone
+
+- intent: companyApp not working
+  examples: |
+    - What to do if the app doesn't work?
+    - what if app doesn't work?
+    - what to do when app isn't working
+    - app isn't working
+    - server problem
+    - app not work
+    - companyApp doesn't work
+    - give attendance without companyApp app
+    - app does not work
+    - app doesn't work
+    - app inconvenience
+    - app server issue?
+    - companyApp server problem
+    - office server problem 
+    - companyApp having problem 
+
+- intent: log without attendance
+  examples: |
+    - update daily log without companyApp app
+    - update daily log if app doesn't work
+    - updating daily log without giving attendance
+    - server having problem can't daily log
+    - should I log my work update if the app is not working
+    - should I give work update if the attendance is not given
+    - how do I log work update if the app is not working
+
+
+- intent: attendance process
+  examples: |
+    - how to give attendance
+    - how to provide attendance
+    - attendance process
+    - attendance demo
+    - attendance tutorial
+    - attendance 
+    - attendance protocols
+    - what are the rules of giving attendance?
+    - is there any rules for attendance?
+    - attendance rules
+    - what are the rules of giving attendance?
+    - is there any rules for attendance?
+    - attendance rules
+    - rules of attendance
+    - how to give attendance?
+    - how to take pictures for attendance
+
+- intent: attendance intime
+  examples: |
+    - what is intime in attendance app
+    - how to give intime
+    - what is the remarks in intime
+    - do I need to fill the remarks
+
+- intent: attendance outtime
+  examples: |
+    - what is outtime remakrs
+    - outtime attendance
+    - what is the remarks in outtime
+    - do i need to fill outtime attendance remakrs
+
+- intent: attendance from inside office 
+  examples: |
+    - give attendance from office?
+    - put attendance from office?
+    - provide attendance from office?
+    - give attendance indoor office?
+    - put attendance indoor office?
+    - provide attendance indoor office?
+    - like know attendance office
+    - attendance from office
+    - attendance from inside office
+    - attendance from indoor office
+    - office attendance
+    - indoor office attendance procedure
+    - procedure giving attendance office
+    - how to give attendance?
+
+
+- intent: attendance from outside office
+  examples: |
+    - giving attendance outside of office?
+    - giving attendance outdoor of office?
+    - attendance outside of office
+    - attendance outdoor of office
+    - attendance outside
+    - attendance outdoor
+    - attendance from outside
+    - attendance from outdoor
+    - outside office attendance
+    - outdoor office attendance
+    - procedure of giving attendance outside of office
+    - procedure of giving attendance outdoor of office
+    - what if i give attendacne outside of office?
+    - can i give attendance outside the office?
+    - can i give attendance outdoor
+    - can i give attendance while outside
+    - may i give attendance outdoor or outside?
+
+
+- intent: late attendance
+  examples: |
+    - maximum late attendance
+    - calculate late attendance
+    - calculate attendance
+    - late attendance
+    - getting late
+    - give late attendance?
+    - give attendance late?
+    - about late attendance
+    - attendance giving late?
+    - what if i arrive office late?
+    - i am late
+    - i arrived office late
+
+- intent: attendance pictures 
+  examples: |
+    - How to take picture for attendance?
+    - picture attendace
+    - rules for capture image
+    - capture photo using companyApp app
+    - capturing photo office app
+    - capture image companyApp app
+    - take selfie give attendance
+    - take selfie attendance
+    - take shoefie give attendance
+    - take shoefie attendance
+    - take picture give attendance
+    - take photo give attendance
+    - capture picture give attendance
+    - capture photo give attendance
+    - capture image give attendance
+
+
+- intent: attendance rule violation
+  examples: |
+    -attendance Rules violation consequences
+    -attendance rule violation
+    -violate the attendance rules
+    -violate rules of attendance
+    -attendance rule
+    -like know attendance rule violation
+    -attendance rule violation penalties
+
+
+- intent: going out of office
+  examples: |
+    - Can I go out of office?
+    - what about going out of office?
+    - go outside of office
+    - go outside in office time
+    - go outside of office in office time
+    - go outside of office in office time take breakfast
+    - go outside of office in office time taking snacks
+    - outside in office time
+    - can go out of office in office time
+    - company allow going outside in office time
+    - company allow going outside
+
+
+- intent: working hour
+  examples: |
+    - working time in a day
+    - starting time of office
+    - end time of office
+    - working time
+    - office period
+    - office time of company
+    - working hours
+    - office stay time
+    - office hours
+    - office in-time
+    - in time
+    - out time
+    - office out-time
+    - working hour in a day
+    - office hour in a day
+    - what is the working time?
+    - how many working hours?
+    - working days in a week?
+    - working days
+    - office days
+    - company working days
+    - how many working days?
+    - which days are working days for employees?
+
+- intent: lunch break
+  examples: |
+    - when is the lunch break?
+    - lunch break
+    - lunch
+    - do I need to bring my lunch?
+    - will office provide lunch?
+    - where to eat lunch?
+    - does office have dining for eating lunch?
+    - can I go out for lunch break?
+
+
+- intent: holidays
+  examples: |
+    -weekly holiday
+    -weekly off days
+    -holidays
+    -weekends week
+    -holidays week
+    -Off days
+    -Off days week
+    -weekends
+    -how many holidays a week?
+    -govt holidays
+    -government holidays
+    -govt holidays
+    -govt. holidays
+    -govt holiday
+    -govt. holiday
+    -company follow government holiday
+    -company follow govt holiday
+    -company follow govt. holiday
+    -company allow government holiday
+    -company allow govt holiday
+    -company allow govt. holiday
+
+
+- intent: privacy policy
+  examples: |
+    - office privacy policy
+    - office policy
+    - privacy policy company
+    - company privacy?
+    - company maintain privacy?
+    - any privacy policy?
+    - what are the privacy policy?
+    - is there any privacy policy?
+    - what are the pricavy protocols?
+    - privacy policy
+
+
+- intent: data privacy policy
+  examples: |   
+    -data privacy policy
+    -about data privacy policy company
+    -about privacy protection rules
+    -legal know others salary
+    -legal inquiry others salary
+    -data protection rules
+    -protection rules  
+    - data privacy of clients
+    - data privacy rules
+
+
+- intent: violation of privacy policy
+  examples: |
+    -inform office about issue?
+    -inform office about crime
+    -inform office about inconvenience
+    -not inform office
+    -crime occur office
+    -inconvenience
+    -crime
+    -issues
+    -hiding identity
+    -hiding identity problem
+    - violation of privacy
+    - violation of privacy policy
+    - consequence of privacy violation
+    - punishment of privacy violation
+
+
+
+- intent: office rules violation
+  examples: |
+    -office Rule violation consequence
+    -violate office rule
+    -rule violate
+    -rule violate office
+    -office rule violate
+    -violation office rule
+    -break office rule
+    -violation rule office
+    -violate rule office
+
+- intent: allowances
+  examples: |
+    -offered allowance
+    -provided allowance
+    -company allowance
+    -allowances company offer
+    -allowances from office
+    -reason for getting allowance
+    -employee will get allowance
+    -types allowance
+    -like know allowances
+    -types allowance offered company
+    -types allowance provided company
+    -office provide allowance
+    -allowance offered company
+    -allowance provided company
+
+
+- intent: transport fee 
+  examples: |
+    -transportation fee
+    -transport fee
+    -vehicle fee
+    -transportation fee?
+    -company allow transportation fee?
+    -company allow vehicle fee?
+    -company offer transportation fee
+    -company offer vehicle fee
+    -company provide transportation fee
+    -company provide vehicle fee
+
+- intent: tour fee
+  examples: |
+    -tour fee
+    -about tour fee?
+    -company allow tour fee?
+    -company offer tour fee
+    -tour fee offered company
+    -travel allowance
+    -travel allowance provided company
+    -travel fee
+    -company allow travel fee?
+    -company offer travel fee
+    -travel fee offered company
+    -travel allowance offered company
+
+- intent: hospitality
+  examples: |
+    -food
+    -snacks
+    -facilities
+    -hospitality
+    -facilities in the office
+    -facilities in office time
+    -office provide tea
+    -office provide coffee
+    -office provide snacks
+    -office provide breakfast
+    -snacks provided office
+    -tea provided office
+    -coffee provided office
+    -snacks offered office
+    -tea offered office
+    -coffee offered office
+    -special facilities
+    -special facilities provided office
+    -special facilities offered office
+    -tiffin or snacks
+
+
+- intent: Leaves
+  examples: |
+    -deserve monthly leave
+    -monthly leave
+    -leaves
+    -maximum number leaves can take month
+    -maximum number day leave month
+    -days of leave an employee can take in a month
+    -maximum leave per month
+    -maximum leave in a month
+    -leave per month
+    -leaves an employee can get per month
+
+
+- intent: Leave Application
+  examples: |
+    -leave application
+    -advance leave
+    -apply for advanced leave
+    -get leave advance
+    -take leave advance
+    -leave application process
+    -advance leave process
+    -advance leave application
+    - application format
+
+
+- intent: Emergency leave
+  examples: |
+    -emergency leave
+    -take emergency leave
+    -get emergency leave
+    -sudden leave
+    -leave without prior information
+
+
+- intent: Mandatory  present day
+  examples: |
+    -mandatory present day
+    -mandatory present day
+    -must attend days
+    -must present day
+    -must attend to the office
+    -mandatory attend to the office
+          
+- intent: dress code
+  examples: |
+    - is there any dress code?
+    - what is the dress code for female employees
+    - what is the dress code for male employees
+    - female dress code
+    - male dress code
+    - dress code
+    - is the any dress code for vising clients?
+    - dress code for marketing team?
+    - dress code for outgoing employee
+    -dress code
+    -office dress code
+    -official dress code?
+    -dress code mandatory
+    -come office wearing
+    -official dress code mandatory
+    -dress code mandatory office
+    -office maintain dress code?
+    -company maintain dress code?
+
+- intent: Office courtesy
+  examples: |
+    - what is office courtesy?
+    - office rules
+    - office manner
+    - ASL office courtesy
+    - is there any courtesy for office
+    - department courtesy
+    - relationship with colleagues
+    - how to behave with colleagues
+    - limitations of sharing information with colleagues
+    - office courtesy
+    - courtesy in the office
+    - office rules
+    - rules office
+    - rules regulations office
+    - office manners
+    - rules and manners
+    - rules and manners of office
+
+- intent: Communication policy
+  examples: |
+    - what is the communication policy?
+    - how to behave with clients?
+    - how to behave with colleagues?
+    - is there any rules for communicating in ASL
+    -communication policy
+    -communication manner policy
+    -communication manner
+    -virtual communication terms
+    -communication through mobile
+    -communication through internet
+    -client communication manner
+
+- intent: Office property
+  examples: |
+    -office equipment use policy
+    -use office property
+    -rules use office property
+    -policy using office property
+    -office property maintenance
+    -maintenance office property
+    -maintain office property
+    -recovery option office property
+    -regular maintenance office properties
+
+
+
+
+
+
+
+
+- intent: joke
+  examples: |
+    -Tell me a joke!
+    -Tell me something funny!
+    -Are you funny!
+    -Do you know joke?
+
+
+# tell Tell me something],
+#  There is a great area of telling. Ask me something specific and  related!     
+
+# - intent: 
+#   examples: |
+#     - 
+

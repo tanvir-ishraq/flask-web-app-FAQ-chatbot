@@ -1,0 +1,329 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+
+- story: sad path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_unhappy
+    - action: utter_cheer_up
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: sad path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_unhappy
+    - action: utter_cheer_up
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_goodbye
+
+- story: whats companyApp
+  steps:
+    - intent: whats companyApp
+    - action: utter_whats companyApp
+
+- story: companyApp for who
+  steps:
+    - intent: companyApp for who
+    - action: utter_companyApp for who
+
+- story: companyApp requirements
+  steps:
+    - intent: companyApp requirements
+    - action: utter_companyApp requirements
+
+- story: companyApp requirements not matched
+  steps:
+    - intent: companyApp requirements not matched
+    - action: utter_companyApp requirements not matched
+
+- story: how to use companyApp
+  steps:
+    - intent: how to use companyApp
+    - action: utter_how to use companyApp
+
+- story: companyApp features
+  steps:
+    - intent: companyApp features
+    - action: utter_companyApp features
+
+- story: update information log
+  steps:
+    - intent: update information log
+    - action: utter_update information log
+
+- story: daily log
+  steps:
+  - intent: daily log
+  - action: utter_daily log
+
+- story: update information real time
+  steps:
+    - intent: update information real time
+    - action: utter_update information real time
+
+- story: consequence for not updating information
+  steps:
+    - intent: consequence for not updating information
+    - action: utter_consequence for not updating information
+
+- story: mobile bill
+  steps:
+    - intent: mobile bill
+    - action: utter_mobile bill
+
+- story:
+  steps:
+    - intent: mobile bill 2
+    - action: utter_mobile bill 2
+
+- story: sim
+  steps:
+    - intent: sim
+    - action: utter_sim
+
+- story: sim 2
+  steps:
+    - intent: sim 2
+    - action: utter_sim 2
+
+- story: personal use of internet pack
+  steps:
+    - intent: personal use of internet pack
+    - action: utter_personal use of internet pack
+
+- story: will office provide smartphone
+  steps:
+    - intent: will office provide smartphone
+    - action: utter_will office provide smartphone
+
+- story: companyApp not working
+  steps:
+    - intent: companyApp not working
+    - action: utter_companyApp not working
+
+- story: log without attendance
+  steps:
+    - intent: log without attendance
+    - action: utter_log without attendance
+
+- story: attendance process
+  steps:
+    - intent: attendance process
+    - action: utter_attendance process
+
+- story: attendance intime
+  steps:
+    - intent: attendance intime
+    - action: utter_attendance intime
+
+- story: attendance outtime
+  steps:
+    - intent: attendance outtime
+    - action: utter_attendance outtime
+
+- story: attendance from inside office
+  steps:
+    - intent: attendance from inside office
+    - action: utter_attendance from inside office
+
+- story: attendance from outside office
+  steps:
+    - intent: attendance from outside office
+    - action: utter_attendance from outside office
+
+- story: late attendance
+  steps:
+    - intent: late attendance
+    - action: utter_late attendance
+
+- story: attendance pictures
+  steps:
+    - intent: attendance pictures
+    - action: utter_attendance pictures
+
+
+- story: going out of office
+  steps:
+    - intent: going out of office
+    - action: utter_going out of office
+
+
+- story: working hour
+  steps:
+    - intent: working hour
+    - action: utter_working hour
+
+- story: lunch break
+  steps:
+    - intent: lunch break
+    - action: utter_lunch break
+
+- story: holidays
+  steps:
+    - intent: holidays
+    - action: utter_holidays
+
+- story: privacy policy
+  steps:
+    - intent: privacy policy
+    - action: utter_privacy policy
+
+- story: data privacy policy
+  steps:
+    - intent: data privacy policy
+    - action: utter_data privacy policy
+
+
+- story: violation of privacy policy
+  steps:
+    - intent: violation of privacy policy
+    - action: utter_violation of privacy policy
+
+- story: office rules violation
+  steps:
+    - intent: office rules violation
+    - action: utter_office rules violation
+
+- story: allowances
+  steps:
+    - intent: allowances
+    - action: utter_allowances
+
+
+- story: transport fee 
+  steps:
+    - intent: transport fee 
+    - action: utter_transport fee
+
+
+- story: tour fee
+  steps:
+    - intent: tour fee
+    - action: utter_tour fee
+
+
+- story: hospitality
+  steps:
+    - intent: hospitality
+    - action: utter_hospitality
+
+- story: Leaves
+  steps:
+    - intent: Leaves
+    - action: utter_Leaves
+
+
+- story: Leave Application
+  steps:
+    - intent: Leave Application
+    - action: utter_Leave Application
+
+
+- story: Emergency leave
+  steps:
+    - intent: Emergency leave
+    - action: utter_Emergency leave
+
+- story: Mandatory present day
+  steps:
+    - intent: Mandatory present day
+    - action: utter_Mandatory present day
+
+
+- story: dress code
+  steps:
+    - intent: dress code
+    - action: utter_dress code
+
+
+- story: Office Courtesy
+  steps:
+    - intent: Office Courtesy
+    - action: utter_Office Courtesy
+
+- story: Communication Policy
+  steps:
+    - intent: Communication Policy
+    - action: utter_Communication Policy
+
+
+- story: Office property
+  steps:
+    - intent: Office property
+    - action: utter_Office property
+
+- story: joke
+  steps:
+    - intent: joke
+    - action: utter_joke
+
+# - story: 
+#   steps:
+#   - intent: 
+#   - action: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

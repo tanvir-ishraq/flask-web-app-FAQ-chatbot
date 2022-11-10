@@ -1,0 +1,249 @@
+session_config:  
+    session_expiration_time: 60
+    carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- idle
+- whats company
+- company for who
+- company requirements
+- company requirements not matched
+- how to use company
+- company features
+- update information log
+- daily log
+- update information real time
+- consequence for not updating information
+- mobile bill
+- mobile bill 2
+- sim
+- sim 2
+- personal use of internet pack
+- will office provide smartphone
+- company not working
+- log without attendance
+- attendance process
+- attendance intime
+- attendance outtime
+- attendance from inside office
+- attendance from outside office
+- late attendance
+- attendance pictures
+- attendance rule violation
+- going out of office
+- working hour
+- lunch break
+- holidays
+- privacy policy
+- data privacy policy
+- violation of privacy policy
+- office rules violation
+- allowances
+- transport fee
+- tour fee
+- hospitality
+- Leaves
+- Leave Application
+- Emergency leave
+- Mandatory present day
+- dress code
+- Office Courtesy
+- Communication Policy
+- Office property
+- joke
+
+
+
+
+responses:
+  utter_greet:
+  - text: Greetings! welcome to your one stop place for all companyApp related questions. Here some common questions; going outside, companyApp app is not working, attd from outsided of offc.
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: Here is something to cheer you up
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+
+
+  utter_whats company:
+  - text: companyApp is a mobile app, provided by company Software Limited, for the employess to provide attendance and work-update throughout the duty period.
+
+  utter_companyApp for who:
+  - text: companyApp app is only for the employees of the company Software Limited.
+
+  utter_companyApp requirements:
+  - text: To use company app the employee must have a android phone with version 6 or above of his/her own. And GPS of the phone must be kept ON while using the app.
+
+  utter_companyApp requirements not matched:
+  - text: Employee must manage to meet all the requirements as soon as possible. Meanwhile he/she can update the information through the following address (companysoftware@yahoo.com) and must keep his/her In-charge at bcc.
+
+  utter_how to use company:
+  - text: User-ID and password with a basic training of using the app will be given by the android developer for first time user. 
+
+  utter_companyApp features:
+  - text: The following features are included in company app_ 
+     Attendance
+     Work update forms for different department
+     Movement register
+     Conveyance register
+     List of holidays
+  
+  utter_update information log:
+  - text: An employee will update his working details on the required forms based in real time during office hours.
+ 
+
+  utter_daily log:
+  - text: Employees need to log their daily work update during working hour in the company app or in the following web address (https://apps.company-bd.com/home_default.aspx) as per their respective department rules.
+
+  utter_update information real time:
+  - text: The employee must provide all work update immediately and in real time during office hour. So that, his In-charge and management board know what he is currently working on. 
+
+  utter_consequence for not updating information:
+  - text: If an employee does not update his working information immediately, he will
+      be deemed to be not providing accurate information about his work to the office
+      and office may take any disciplinary action without prior notice.
+
+  utter_mobile bill:
+  - text: Yes. Office will provide a SIM card with a data pack of minutes, internet and SMS pack. 
+
+  utter_mobile bill 2:
+  - text: Office will provide mobile bill per monthly basis. The employee have to recharge on his/her own liability if the package if finished before time.
+
+  utter_sim:
+  - text: Office will provide a SIM card with a data pack of minutes, internet and SMS pack.
+
+  utter_sim 2:
+  - text: If the SIM card is lost, the employee must inform the HR immediately. The management authority may or may not charge considering the situation.
+
+  utter_personal use of internet pack:
+  - text: The employee may use the data pack for personal use but it is recommended to use only for office work. And office will not pay for extra usage.
+
+  utter_will office provide smartphone:
+  - text: company will not provide any phone or device to use the company app. The employee must have a smartphone that matches the company app requirements.
+
+  utter_companyApp not working:
+  - text: First, check if everyone facing the same problem. If so, then give attendance through email at companysoftware@yahoo.com  and keep HR (amit45684@gmail.com) at cc.
+
+
+  utter_log without attendance:
+  - text: If there is issue with company app but the web is working then employees will log their work update in regular manner. In case of server unavailability, the employees will contact with their in-charge or seniors for further instruction.
+
+  utter_attendance process:
+  - text: Intime process_ To give attendance using company app, the employee needs to click two pictures (selfie and shoefie) for In-time and just get time when giving out-time. The employee must be dressed as per office dress code while giving attendance pictures. If the employee wants to take lunch from office then click YES for lunch, otherwise keep that field as NO.And then just click get time for in time field.Outime process For leaving just click Get time for outime.And the remarks field must be filled with proper explanation if necesssary, otherwise keep those fields empty. 
+
+
+  utter_attendance intime:
+  - text: In-time in attendance app requires to provide two pictures of the employee, Lunch and remarks. Pictures and Lunch field is mandatory to fill. In case of late attendance, Remarks must be added with short explanation of being late.
+
+  utter_attendance outtime:
+  - text: The employee must provide remakrs in case of early leaving with mentioning the reason in short. 
+
+  utter_attendance from inside office:
+  - text: The employees present in the office must give the attendance from inside of the office. Attendance in front of the elevator, under the office or from any other place will be considered as breaking the office rules.
+
+  utter_attendance from outside office:
+  - text: If the employee has the prior permission then he can give attendance from outside of office. And while giving attendance, pictures should be taken in such a way that the location of the place can be seen on the signboard. And the remarks fields should be filled with proper explanation of providing attendance from outside office.This process is applicable for both in-time and out-time.
+
+
+  utter_late attendance:
+  - text: Delay will be counted from 10:16am.  
+
+
+  utter_attendance pictures:
+  - text: For giving attendance(In-time) the employee needs to take two pictures. The selfie must include employees full face with minimum background and the shoefie will include the feet of the employee. In both pictures the dress code of office need to be maintained strictly.
+
+  utter_attendance rule violation:
+  - text: If there is a delay of three days in any month, one days salary will be deducted for those three days. If exit attendance is given in front of the elevator, under the office or intentionally showing extra time from any other place, a fine of Tk. 50 will be charged for that day.
+
+
+  utter_going out of office:
+  - text: An employee cannot go out of the office to have breakfast or for personal reason after giving attendance. If there is an emergency and/or for official work, he must take the permission of in-charge. And If one go out of office in office time, he have to keep company, gps and internet on. Otherwise, it will be considered intentional and proper action will be taken.
+ 
+  utter_working hour:
+  - text: The office time is from 10:00am to 07:00pm, every Saturday to Thursday. But if an employee fails to perform the work assigned to him within deadline, then he may have to work even after office hour.
+
+
+  utter_lunch break:
+  - text: Generally from 1pm to 2pm is considered lunch break. But employees can take that lunch break anytime of the working hour. The employees can bring their lunch from home and eat in the office dining or they can go out for lunch. To have lunch outside, he/she should take permission from the In-charge. 
+
+
+  utter_holidays:
+  - text: Generally, Friday is considered off day for all employees. There is a list of holidays in the company app. EMployees will follow that list of holidays for reference.
+ 
+  utter_privacy policy:
+  - text: company software limited maintains a very strict Data Privacy policy for its clients and for employees as well. To know more about it please type_ "Data Privacy Policy" 
+
+
+  utter_data privacy policy:
+  - text: Data Privacy policies are_ 1) All important matters including salary allowance, privacy policy of the employment contract executed with company Software Limited and the employee.2) Any work related to the department in which the employee is working or any matter or financial transaction related to the customer.3) There is a possibility of any kind of loss to the organization, customer or any employee working in the organization if any person from outside knows about any internal matter of the organization.4) Not to discuss about the own facilities with other employees.5) In case of need of work, the employee is informed and acquired various confidential information, software, miscellaneous matters of the organization and the customer. If such information is misused in any way, providing it to someone by deception will be considered as a crime.6) Attempting to collect different types of information from another department on purpose will be considered as an offense.
+
+
+  utter_violation of privacy policy:
+  - text: If a crime is committed in the office or if there is a possibility that an employee knowingly withholds information, then he will be considered as involved in the crime and lawful action will be taken.And if any employee knows about any crime and he/she does not want to report directly to the management council, he/she can submit it to the office in a designated secret box (where there will be no cameras) or he/she can inform in the email specified under pseudonym.
+
+    
+  utter_office rules violation:
+  - text: Any rule violation of attendance will charge fine from salary and office may take any kind of severe punishment for the same kind of repetition.
+
+
+  utter_allowances:
+  - text: company offers three types of allowances --1) Vehicle fee or Transportation fee 2)Travel allowance or Tour fee or visit fee and3) Mobile bill  
+
+  utter_transport fee:
+  - text: An employee will be paid transport allowance if he/she have to go out for office work. Local/Public transport fees will vary according to the designation of the employee. And he must input the followings in the companyApp app:\n1) Name of the place and destination of the journey,\n      2) The name of the organization he is going to,\n3) What is the reason for going,\n4) The name of the vehicle being ridden,\n5) The amount of money. \np.s.\"The fare for coming or going to the office from one's own home or house cannot be claimed as travel allowance.\" 
+  
+ 
+  utter_tour fee:
+  - text: Employees who goes on tour for official work purpose he/she will get the following allowance as tour fee; 1) All travel allowance from the office to the workplace, 2) Lunch and dinner bill,3) Morning and afternoon breakfast bill, and 4) Hotel bill for accommodation. All the above issues should be mentioned in time in the apps provided by the office and the required tickets / bills / receipts / other documents should be submitted along with the tour report on the day of attendance at the end of the tour.
+
+
+  utter_hospitality:
+  - text: Office will provide 3 times of tea/coffee and 2 times 0f snacks in a day.   
+
+
+  utter_Leaves:
+  - text: An employee will get a maximum of two days leave per month i.e. 24 earned leaves in a year. If an employee wants, he can take maximum 5 days leave together with his earned leave. In that case, he must have at least 5 days leave remaining and have to apply for this leave at least 15 days in advance.Besides, No financial compensation will be paid against the earned leave. And if the leave earned every year is not spent within the year, it will not be transferred to the next year. 
+
+
+  utter_Leave Application:
+  - text: companyApp apps have arrangements to apply for leave in advance. After applying, it has to be printed and submitted to the appropriate authority with approval at least 3 working days in advance. Approved leave documents must be submitted to the HR department. For emergency leave, documents have to submitted within two working days of the beginning of the month prior to the preparation of the payroll or salary account for the month.
+
+
+  utter_Emergency leave:
+  - text: If an employee is unable to report for duty due to unavoidable reasons, he has to inform his superior by Phone / WhatsApp and email details. The next present day on duty, he will has to submit the appropriate certificate and submit the approved documents subject to approval.
+
+  utter_Mandatory present day:
+  - text: If the office is closed for a long time, an employee must be present on the opening day of the office.
+
+  utter_dress code:
+  - text: Formal dress code should be maintained in the office premises and whereever the employee represents company Software Limited.For male employees_ Neutral color full sleeve shirt with formal pants and shoes.For female employees_ Salwar Kamiz with minimum pattern and light coloured.Note for the employees who visit clients_ The employees must wear such elegant official attire so that the reputation of the organization is not tarnished in any way. In the case of male employees, haircuts and beards should also be taken into account in the office environment.
+
+  utter_Office Courtesy:
+  - text: The success of ASL is achieved through the combined efforts of all of the employees from start to finish. So,1) an amicable and hail-fellow-well-met relation must be maintained with everyone in the office.2)No confidential information from ones own department may be provided to any employee in another department.3) When communicating with any employee of another department, care must be taken so that the reputation of ones own department is not tarnished.4) This must be remembered that regardless of the department, the person who joined the office the day before is a senior.
+
+
+  utter_Communication Policy:
+  - text: Every employee must keep the followings in mind while communicating with colleagues, clients or any other person as an ASL family member_1) Do not  speak in such a way that the employee personally and his organization company Software Limited is represented badly.2) At all times try to communicate with the customer and potential customers in order to gain the reputation of oneself and the organization.3) If a customer misbehaves for any reason or without any reason, he should try to resolve it by using polite head, in no way can it be used in anger.4)Patience is required to communicate politely by understanding the customer nicely.5) And also while communicating through mobile an employee must keep in mind that he is representing the company and to behave accordingly.
+
+  utter_Office property:
+  - text: 1) At any time when an employee gets the property, he should check it thoroughly and according to the rules of the office (email / WhatsApp) he should give a note that it is working properly. If there is any problem, it should be reported to the office within 24 hours. Similarly, when this property is to be transferred, it must be returned according to what was understood.2) Such common properties which will be used by all, should be maintained by following a certain routine so that maximum utilization can be made from the properties. For example, cleaning the AC filter, checking the water level of the IPS, arranging for service if a device is not working properly, etc., should be done at ones own risk without looking at anyone else.3)An employee need to be aware about preventing wastage while using  electronic items that constantly use electricity. Check that everything is closed properly before leaving the office especially who are leaving last.4) If any property needs to be repaired during using period, that must be repaired at your own risk.    
+
+
+  utter_joke:
+  - text: I ate a clock yesterday, it was very time-consuming.
+  -  text: Person 1 Hey Crissy!, do you remember me? Person 2 Wrong number. Person 1 What is your number then?
+  -  text: Two guys stole a calendar. They got six months each.
+  -  text: How did the telephone propose to its girlfriend? He gave her a ring.
+  -  text: Why was the birthday cake as hard as a rock? Because it was marble cake
